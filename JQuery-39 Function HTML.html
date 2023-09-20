@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<style>
+.txt
+{
+padding:10px;
+text-align:justify;
+font-size:25px;
+border:1px solid;
+background:limegreen;
+border-radius:10px;
+}
+#btn-1,#btn-2,#btn-3
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+<script>
+/*
+/*
+Function html is used to add some html element.
+*/
+$(document).ready(function(){
+$("#btn-1").click(function(){
+$(".txt").html("<input type='text'/>");
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of HTML Effect</h3>
+<div class="txt">
+Operating System Is A System Software Whose Primary Job Is To Communicate
+Hardwares And Softwares In Order To Get Best Utilization Of Computer Recources.
+Operating System Is A System Software Whose Primary Job Is To Communicate
+Hardwares And Softwares In Order To Get Best Utilization Of Computer Recources.
+Operating System Is A System Software Whose Primary Job Is To Communicate
+Hardwares And Softwares In Order To Get Best Utilization Of Computer Recources.
+Operating System Is A System Software Whose Primary Job Is To Communicate
+Hardwares And Softwares In Order To Get Best Utilization Of Computer Recources.
+</div>
+</br>
+<button type="button" id="btn-1">Add HTML</button>
+</center>
+</body>
+</html>

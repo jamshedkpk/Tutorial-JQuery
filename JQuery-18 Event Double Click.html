@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Double click is used to perform an action when user double click a button
+Using of double click event
+*/
+$(document).ready(function(){
+$("#btn").dblclick(function(){
+alert("Button Is Double Clicked");
+});
+});
+</script>
+<style>
+#btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>Example Of Double Click Event</h3>
+<button type="button" id="btn">Click On Me</button>
+</center>
+</body>
+</html>

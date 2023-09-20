@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<style>
+.btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+<script>
+/*
+Delegate event is used to perform an action on child element inside
+Parent element. It is usually used to locate an element easily.
+*/
+$(document).ready(function(){
+$(".first").delegate(".btn","click",function(){
+alert("Button-1 Is Clicked");
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Delegate Event</h3>
+<div class="first">
+<button type="button" class="btn">Button-1</button>
+</div>
+</br>
+<div class="second">
+<button type="button" class="btn">Button-2</button>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Click event is used to perform an action when user click a button through
+Mouse or keyboard
+Using of click event
+*/
+$(document).ready(function(){
+$("#btn").click(function(){
+alert("Button Is Clicked");
+});
+});
+</script>
+<style>
+#btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>Example Of Click Event</h3>
+<button type="button" id="btn">Click On Me</button>
+</center>
+</body>
+</html>

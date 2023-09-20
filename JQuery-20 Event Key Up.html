@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Keypress event is used to perform an action when any key is pressed from
+Keyboard.It is usually used to measure password strength etc..
+Using of keyup event
+*/
+$(document).ready(function(){
+$("#txt").keyup(function(){
+var lnth=$("#txt").val().length;
+$("#lbl2").text(lnth);
+if(lnth<=4)
+{
+$("#lbl3").text("Password Is Very Weak");
+$("#lbl3").css("background","red");
+}
+else if(lnth<=6)
+{
+$("#lbl3").text("Password Is Weak");
+$("#lbl3").css("background","blue");
+}
+else if(lnth>6)
+{
+$("#lbl3").text("Password Is Storng");
+$("#lbl3").css("background","green");
+}
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Key Up Event</h3>
+<label id="lbl1">Enter Your Password :</label>
+<input type="text" id="txt"/>
+<label id="lbl2"></label>
+&nbsp; &nbsp; &nbsp;
+<label id="lbl3" style="color:white;"></label>
+</center>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attch a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<script>
+/*
+In HTML we can create an attribute for each control and each attribute 
+Has unique value. Event.preventDefault function is used to stop the control
+To perform its default action.
+*/
+$(document).ready(function(){
+$(".btn").click(function(event){
+event.preventDefault();
+var cid=$(this).attr("cid");
+alert("The Button Attribue Is = "+cid);
+});
+});
+</script>
+<style>
+.btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+.text
+{
+border:1px solid gray;
+padding:10px;
+background:green;
+color:white;
+font-size:25px;
+font-family:calibri;
+text-align:justify;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>
+Example Of Event Prevent Default Function
+</h3>
+</center>
+<div class="text">
+<p>
+In html we can define our own attribute for a control like name, value, etc...
+In these button we have defined its attribute cid having different values.
+We can search, update and delete any record by using this attribute.
+In jquery event.preventDefault function is used to stop an element to perform
+its current job like in this example they should have to submit the form
+but event.preventDefault stops it to submit a form and display its attribute in
+a variable and display it on the screen when we click any button.
+</p>
+<center>
+<form method="post" action="ok.html">
+<button type="submit" class="btn" cid="31">Click me</button>
+<button type="submit" class="btn" cid="32">Click me</button>
+<button type="submit" class="btn" cid="33">Click me</button>
+<button type="submit" class="btn" cid="34">Click me</button>
+<button type="submit" class="btn" cid="35">Click me</button>
+</div>
+</form>
+</center>
+</body>
+</html>

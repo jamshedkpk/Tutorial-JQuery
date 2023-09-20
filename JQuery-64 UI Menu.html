@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<!--To attach a JQuery UI js file-->
+<script type="text/javascript" src="JQuery/JQuery UI.js"></script>
+<!--To attach a JQuery UI css file-->
+<link type="text/css" rel="stylesheet" href="JQuery/JQuery UI.css"/>
+<script type="text/javascript">
+/*
+In order to use JQuery UI library we need three files
+JQuery.js file, JQuery UI.js file and JQuery UI.css file
+*/
+$(document).ready(function(){
+$("#example").menu();
+});
+</script>
+<style>
+</style>
+</head>
+<body>
+<center>
+<h3>
+Example Of JQuery Menu
+</h3>
+<ul id="example" style="width:160px;">
+<li>
+<div>Home</div>
+</li>
+<li>
+<div>Download</div>
+
+<ul>
+<li>
+<div>Audio</div>
+</li>
+<li>
+<div>Vedio</div>
+</li>
+<li>
+<div>Books</div>
+</li>
+<li>
+<div>Magzine</div>
+</li>
+</ul>
+</li>
+<li>
+<div>Contact</div>
+</li>
+<li>
+<div>Services</div>
+</li>
+<li>
+<div>FAQ</div>
+</li>
+</ul>
+</center>
+</body>
+</html>

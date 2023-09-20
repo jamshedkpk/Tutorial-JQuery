@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Focus In event is used to perform an action when user focus in
+From mouse or keyboard. It is used when any control get focus.
+*/
+$(document).ready(function(){
+$(".txt").focusin(function()
+{
+$(this).css("background","orange");
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Focus In Event</h3>
+<table>
+<tr>
+<td>
+<label id="lbl1">Enter Your First Name :</label>
+</td>
+<td>
+<input type="text" class="txt"/>
+</td>
+</tr>
+<tr>
+<td>
+<label id="lbl1">Enter Your Last Name :</label>
+</td>
+<td>
+<input type="text" class="txt"/>
+</td>
+</tr>
+<tr>
+<td>
+<label id="lbl1">Enter Your Password :</label>
+</td>
+<td>
+<input type="text" class="txt"/>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

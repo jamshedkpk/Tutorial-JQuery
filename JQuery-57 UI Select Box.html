@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<!--To attach a JQuery UI js file-->
+<script type="text/javascript" src="JQuery/JQuery UI.js"></script>
+<!--To attach a JQuery UI css file-->
+<link type="text/css" rel="stylesheet" href="JQuery/JQuery UI.css"/>
+<script type="text/javascript">
+/*
+In order to use JQuery UI library we need three files
+jquery.js , jquery ui.js And jquery ui.css which are included.
+*/
+$(document).ready(function(){
+$("#countries").controlgroup();
+});
+</script>
+</head>
+<body>
+<center>
+<h3>
+Example Of JQuery UI Select Box
+</h3>
+<label>Select Your Country :</label>
+<div id="countries">
+<select>
+<option value="pakistan">Pakistan</option>
+<option value="india">India</option>
+<option value="japan">Japan</option>
+<option value="russia">Russia</option>
+<option value="turkey">Turkey</option>
+</select>
+</div>
+</center>
+</body>
+</html>

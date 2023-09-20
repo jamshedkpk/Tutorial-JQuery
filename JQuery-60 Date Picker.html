@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<!--To attach a JQuery UI js file-->
+<script type="text/javascript" src="JQuery/JQuery UI.js"></script>
+<!--To attach a JQuery UI css file-->
+<link type="text/css" rel="stylesheet" href="JQuery/JQuery UI.css"/>
+<script type="text/javascript">
+/*
+In order to use JQuery UI library we need three files
+jquery.js , jquery ui.js And jquery ui.css which are included.
+In order to make data picker function datepicker is used.
+For Writtng in this format Friday-April-2018
+DateFormat:'DD-mm-yy' For Writting in this format like
+Friday-04-2018 
+*/
+$(document).ready(function(){
+$("#txt-1").datepicker
+({
+// To display in this format like Date:Month:Year
+dateFormat:"dd/mm/yy",
+});
+$("#txt-2").datepicker
+({
+// To display in this format like Date:Monthname:Year
+dateFormat:"dd MM,yy",
+});
+$("#txt-3").datepicker
+({
+// To display in this format like Dayname:Month:Year
+dateFormat:"DD/mm/yy",
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>
+Example Of JQuery UI Date Picker
+</h3>
+<label>Please Select A Date :</label>
+<input readonly="true" id="txt-1"/>
+</br>
+<label>Please Select A Date :</label>
+<input readonly="true" id="txt-2"/>
+</br>
+<label>Please Select A Date :</label>
+<input readonly="true" id="txt-3"/>
+</center>
+</body>
+</html>

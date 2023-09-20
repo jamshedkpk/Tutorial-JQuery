@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<!--To attach a JQuery UI js file-->
+<script type="text/javascript" src="JQuery/JQuery UI.js"></script>
+<!--To attach a JQuery UI css file-->
+<link type="text/css" rel="stylesheet" href="JQuery/JQuery UI.css"/>
+<script type="text/javascript">
+/*
+In order to use JQuery UI library we need three files
+JQuery.js file, JQuery UI.js file and JQuery UI.css file
+*/
+$(document).ready(function(){
+$("#example").tabs();
+});
+</script>
+<style>
+</style>
+</head>
+<body>
+<center>
+<h3>
+Example Of JQuery UI Tabs
+</h3>
+<div id="example">
+<ul>
+<li>
+<a href="#page-1">Page-1</a>
+</li>
+<li>
+<a href="#page-2">Page-2</a>
+</li>
+<li>
+<a href="#page-3">Page-3</a>
+</li>
+<li>
+<a href="#page-4">Page-4</a>
+</li>
+<li>
+<a href="#page-5">Page-5</a>
+</li>
+</ul>
+<div id="page-1">
+<p>I Am Page-1 Paragraph....</p>
+</div>
+<div id="page-2">
+<p>I Am Page-2 Paragraph....</p>
+</div>
+<div id="page-3">
+<p>I Am Page-3 Paragraph....</p>
+</div>
+<div id="page-4">
+<p>I Am Page-4 Paragraph....</p>
+</div>
+<div id="page-5">
+<p>I Am Page-5 Paragraph....</p>
+</div>
+</div>
+</center>
+</body>
+</html>

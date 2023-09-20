@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Using of class selector
+*/
+$(document).ready(function(){
+$(".btn").click(function(){
+alert("Button Is Clicked");
+});
+});
+</script>
+<style>
+.btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>Example Of Class Selector</h3>
+<button type="button" class="btn">Click On Me</button>
+<button type="button" class="btn">Click On Me</button>
+<button type="button" class="btn">Click On Me</button>
+<button type="button" class="btn">Click On Me</button>
+</center>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<style>
+ul
+{
+margin:0;
+padding:0;
+list-style:none;
+}
+ul li
+{
+float:left;
+width:120px;
+height:30px;
+line-height:30px;
+text-align:center;
+background:red;
+border:1px solid dotted;
+border-radius:5px;
+}
+ul li a
+{
+display:block;
+text-decoration:none;
+}
+ul li a:hover
+{
+color:white;
+background:blue;
+}
+</style>
+<script>
+/*
+Creation Of Menu
+*/
+$(document).ready(function(){
+$("li").find("ul>li").hide();
+$("li").hover(function(){
+$(this).find('ul>li').stop().slideToggle();
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Menu</h3>
+<ul>
+<li>
+<a href="#">Home</a>
+</li>
+<li>
+<a href="#">Download</a>
+<ul>
+<li>
+<a href="#">Books</a>
+</li>
+<li>
+<a href="#">Audio</a>
+</li>
+<li>
+<a href="#">Vedio</a>
+</li>
+<li>
+<a href="#">Megzine</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Help</a>
+</li>
+<li>
+<a href="#">Services</a>
+<ul>
+<li>
+<a href="#">Washing</a>
+</li>
+<li>
+<a href="#">Eating</a>
+</li>
+<li>
+<a href="#">Pumping</a>
+</li>
+<li>
+<a href="#">Sleeping</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Contact</a>
+</li>
+<li>
+<a href="#">FAQ</a>
+</li>
+</ul>
+</center>
+</body>
+</html>

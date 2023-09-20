@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<!--To attach a JQuery UI js file-->
+<script type="text/javascript" src="JQuery/JQuery UI.js"></script>
+<!--To attach a JQuery UI css file-->
+<link type="text/css" rel="stylesheet" href="JQuery/JQuery UI.css"/>
+<script type="text/javascript">
+/*
+In order to use JQuery UI library we need three files
+jquery.js , jquery ui.js And jquery ui.css which are included.
+*/
+$(document).ready(function(){
+$("#example").controlgroup();
+});
+</script>
+</head>
+<body>
+<center>
+<h3>
+Example Of JQuery UI Control Group
+</h3>
+<fieldset>
+<div id="example">
+<legend>Please Fill The Form</legend>
+<label>First Name :</label>
+<input type="text"></input>
+<label>Last Name :</label>
+<input type="text"></input>
+<label>Email Name :</label>
+<input type="text"></input>
+</br></br>
+<select>
+<option value="pakistan">Pakistan</option>
+<option value="india">India</option>
+<option value="turkey">Turkey</option>
+<option value="russia">Russia</option>
+<option value="japan">Japan</option>
+</select>
+<label>
+<input type="radio" name="gender">Male</input>
+</label>
+<label>
+<input type="radio" name="gender">Female</input>
+</label>
+<label>
+<input type="checkbox" name="language">English</input>
+</label>
+<label>
+<input type="checkbox" name="language">Pushto</input>
+</label>
+<label>
+<input type="checkbox" name="language">Urdu</input>
+</label>
+</br></br>
+<button type="button">Submit</button>
+</div>
+</fieldset>
+</center>
+</body>
+</html>

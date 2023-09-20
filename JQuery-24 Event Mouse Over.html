@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<style>
+#btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+
+<script>
+/*
+Mouse over event is used to perform an action when user move a Mouse
+Towards any control
+*/
+$(document).ready(function(){
+$("#btn").mouseover(function()
+{
+alert("Mouse Is Overed");
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Mouse Over Event</h3>
+<button type="button" id="btn">Hover On Me</button>
+</center>
+</body>
+</html>

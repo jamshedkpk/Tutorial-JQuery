@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Using of class selector inside another tag
+*/
+$(document).ready(function(){
+$("div .btn1,div .btn2").click(function(){
+alert("Button Is Clicked");
+});
+});
+</script>
+<style>
+.btn1,.btn2,.btn3,.btn4
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>Example Of Class Selector Inside A Tag</h3>
+<div>
+<button type="button" class="btn1">Click On Me</button>
+<button type="button" class="btn2">Click On Me</button>
+</div>
+</br>
+<button type="button" class="btn3">Click On Me</button>
+<button type="button" class="btn4">Click On Me</button>
+</center>
+</body>
+</html>

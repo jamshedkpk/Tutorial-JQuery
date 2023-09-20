@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<style>
+#btn
+{
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+
+<script>
+/*
+Change event is used when user change any value or index. It is usually
+Used with select box when user change its value...
+*/
+$(document).ready(function(){
+$("#box").change(function(){
+var color=$(this).val();
+$("body").css("background",color);
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Change Event</h3>
+<select id='box'>
+<option value="green">Green</option>
+<option value="yellow">Yellow</option>
+<option value="limegreen">Limegreen</option>
+<option value="orange">Orange</option>
+<option value="red">Red</option>
+<option value="blue">Blue</option>
+</select>
+</center>
+</body>
+</html>

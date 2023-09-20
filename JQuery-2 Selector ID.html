@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+In JQuery we work on three things
+(1)-Control: It is the name of html element like a button, textfield etc.
+(2)-Event  : It is an event name like a click, double click etc..
+(3)-Action : It is an action name to be performed when an event is executed.
+$("Name of Control").Event(Action);
+$("#btn").click(function(){alert("OK")});
+In JQuery we can call a control by three ways and these are called selector.
+(a)- ID Selector
+(b)- Class Selector
+(c)- Tag Selector
+*/
+// Using of ID Selector......
+$(document).ready(function(){
+$("#btn1").click(function(){
+alert("Button Is Clicked");
+});
+});
+</script>
+<style>
+#btn1
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>Example Of ID Selector</h3>
+<button id="btn1">Click On Me</button>
+</center>
+</body>
+</html>

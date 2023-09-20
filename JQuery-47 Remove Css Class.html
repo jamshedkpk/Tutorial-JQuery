@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attch a JQuery file-->
+<script type="text/javascript" src="JQuery/JQuery.js"></script>
+<script>
+/*
+In JQuery we can add a css class
+*/
+$(document).ready(function(){
+$("#btn").click(function(){
+$("p").removeClass("text");
+});
+});
+</script>
+<style>
+#btn
+{
+font-weight:700;
+height:40px;
+width:200px;
+font-size:16px;
+}
+.text
+{
+border:1px solid gray;
+padding:10px;
+background:green;
+color:white;
+font-size:25px;
+font-family:calibri;
+text-align:justify;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+<center>
+<h3>
+Example Of Remove Css Class
+</h3>
+</center>
+<p class="text">
+In html we can define our own attribute for a control like name, value, etc...
+In these button we have defined its attribute cid having different values.
+We can search, update and delete any record by using this attribute.
+In jquery event.preventDefault function is used to stop an element to perform
+its current job like in this example they should have to submit the form
+but event.preventDefault stops it to submit a form and display its attribute in
+a variable and display it on the screen when we click any button.
+</p>
+<center>
+<button type="submit" id="btn">Click me</button>
+</form>
+</center>
+</body>
+</html>

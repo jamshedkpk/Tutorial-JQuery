@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Example Of JQuery</title>
+<!--To attach a JQuery file-->
+<script type="text/javascript" src="Jquery/Jquery.js"></script>
+<script>
+/*
+Using Of Form Selector
+*/
+$(document).ready(function(){
+$(":input").click(function(){
+$(this).css("background","orange");
+});
+});
+</script>
+</head>
+<body>
+<center>
+<h3>Example Of Form Selector</h3>
+<form method="post">
+<label>Enter Your Name :</label>
+<input type="text" />
+</form>
+</center>
+</body>
+</html>
